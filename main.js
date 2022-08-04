@@ -8,7 +8,7 @@ class Serv{
 const Servicios=[]
 
 
-let ingreso= prompt  ("ingrese los servicios que quiera adquirir en su sitio web: Banners animados, Diseño y maquetacion de sitio HTML5 y CSS3, Diseño y maquetacion de sitio responsivo, galeria de imagenes, formulario web, SEO").toLowerCase();
+let ingreso= prompt  ("ingrese los servicios que quiera adquirir en su sitio web: Banners animados, Diseño y maquetacion de sitio HTML5 y CSS3, Diseño y maquetacion de sitio responsivo, galeria de imagenes, formulario web, SEO. APRETAR LA LETRA f para realizar la sumatoria de los servicios").toLowerCase();
 
 let precio=0;
 
@@ -75,6 +75,7 @@ let filt3 = Servicios.filter ((ser) => ser.precio >= 30000 && ser.precio < 50000
 console.log(filt3);
 let filt4 = Servicios.filter ((ser) => ser.precio >= 50000 && ser.precio < 80000)
 console.log(filt4);
+
 ivaIncluido=precio*1.21;
 
 console.log("precio final"+" $"+ ivaIncluido + (" (iva incluido)"));
